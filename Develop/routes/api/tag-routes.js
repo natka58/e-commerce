@@ -46,8 +46,8 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
   // create a new tag
-  Tag.findCreateFind({
-    tag_name: req.bosy.tag_name
+  Tag.create({
+    tag_name: req.body.tag_name
   })
     .then(dbTagData => res.json(dbTagData))
     .catch(err => {
@@ -57,7 +57,7 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a tag's name by its `id` value
-  Tag.update(erq.bosy, {
+  Tag.update(req.body, {
     where: {
       id: req.params.id
     }

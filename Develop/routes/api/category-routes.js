@@ -57,9 +57,8 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
   
   Category.create({
-    username: req.body.username,
-    email: req.body.email,
-    password: req.body.password
+    category_name: req.body.category_name
+    
   })
     .then(dbCategoryData => res.json(dbCategoryData))
     .catch(err => {
