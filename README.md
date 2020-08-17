@@ -62,6 +62,6 @@ The GET, POST, PUT, and DELETE routes for tags being tested in Insomnia Core: \
     
   ## Questions
   
- GitHub URL: https://github.com/natka58 
+ GitHub Username: https://github.com/natka58 
   
  For questions reach out to: lilikoy@sbcglobal.net.
